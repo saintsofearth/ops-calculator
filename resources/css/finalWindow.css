@@ -1,0 +1,48 @@
+input:disabled {
+    background-color: #232526;
+    border: 2px solid #333638;
+}
+
+table {
+    width: 100%;
+    text-align: center;
+    padding: 0 1rem;
+    border-spacing: 0;
+    border-collapse: collapse;
+    max-width: 480px;
+    margin: auto;
+}
+
+td {
+    border: 2px solid #ffa833;
+    padding: 1rem 0;
+}
+
+/* Custom radio button CSS */
+
+
+.right-spacing {
+    margin-right: 0.5rem;
+}
+
+.span-spacing {
+    margin: 0 0.5rem 0 1rem;
+}
+
+#corrDeg {
+    margin: 0 0.25rem 0 0.5rem;
+}
+
+.correction-summary--list {
+    border: 2px solid;
+    max-width: 480px;
+    margin: 1rem auto;
+    list-style: none;
+    min-height: 4rem;
+}
+
+.correction-summary--item {
+    margin: 1rem 0;
+    border-bottom: 2px solid #333638;
+    padding-bottom: 0.5rem;
+}

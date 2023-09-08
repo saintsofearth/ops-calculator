@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@300;400;500;600&display=swap');
+
+/* font-family: 'Dosis',sans-serif; PARAGRAPH FONTS*/
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap');
+
+/* font-family: 'Quicksand', sans-serif; HEADLINE FONTS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    background-color: #232526;
+    color: #FF9200;
+}
+
+header {
+    margin-top: 2.5rem;
+}
+
+main {
+    width: 100%;
+    max-width: 48rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    font-family: 'Dosis', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 1rem 0;
+}
+
+form {
+    width: 100%;
+    /* padding: 2rem 0; */
+    text-align: center;
+}
+
+.form-group {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.form-group label,
+.form-group input {
+    font-size: 1.25rem;
+}
+
+.form-group label {
+    margin-right: 0.75rem;
+}
+
+.form-group input {
+    padding: 0.25rem 0.5rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    color: #FF9200;
+    background-color:#333638;
+    border: 2px solid transparent;
+
+    /* outline-color: #ffa833; */
+    outline-width: 0;
+    /* outline-offset: 0; */
+}
+
+.form-group input:focus {
+    border-bottom-color: #ffa833;
+}
+
+input[type="number"] {
+    width: 6.5rem;
+}
+
+.dms input {
+    width: 5rem;
+}
+
+
+.centered {
+    text-align: center;
+}
+
+button {
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    padding: 0.25rem 0.5rem;
+    display: inline-block;
+    background-color: #15D034;
+    color: #232526;
+    border: 0;
+    outline-offset: 0;
+    outline-width: 0;
+    border-radius: 5px;
+    margin: 0 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #7bf28f;
+    cursor: not-allowed;
+}
+
+.exitBtn {
+    background-color: #d20;
+}
+
+.symbol {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 0.25rem;
+    margin-right: 0.5rem;
+}
+
+.easting {
+    display: inline-block;
+    margin-right: 0.5rem;
+}
+
+.northing {
+    display: inline-block;
+    margin: 1rem 0.5rem;
+}
+
+footer {
+    /* position: absolute; */
+    /* bottom: 0; */
+    padding: 2rem;
+    width: 100%;
+}
+
+.caption {
+    font-weight: 600;
+}
+
+@media (min-width: 48rem) {
+    main {
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin: 1.2rem 0;
+    }
+}

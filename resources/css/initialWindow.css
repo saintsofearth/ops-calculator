@@ -1,0 +1,36 @@
+/* toggle radio button */
+
+
+
+
+/* span */
+.tgtSelection {
+    border: 2px solid rgba(255, 167, 51, 0.5);
+    display: inline-block;
+    width: 360px;
+    padding: 1rem 0;
+}
+
+label[for="tgtGr"] {
+    margin-right: 1.5rem;
+}
+
+#tgtGrRadio,
+#polarDistRadio {
+    margin-right: 0.5rem;
+}
+
+.gr-span, 
+.polar-span {
+    margin-right: 1rem;
+}
+
+
+
+/* #clearTgt {
+    margin-right: 0.5rem;
+}
+
+#nextBtn {
+    margin-left: 0.5rem;
+} */

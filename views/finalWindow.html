@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../resources/css/shared.css">
+    <link rel="stylesheet" href="../resources/css/finalWindow.css">
+    <title>Final Window</title>
+</head>
+<body>
+    <form>
+        <div class="form-group">
+            <label for="">Op:</label>
+            <span class="easting">E</span>
+            <input type="number" name="" id="opEast" disabled> 
+            <span class="northing">N</span>
+            <input type="number" disabled id="opNorth">
+        </div>
+        <div class="form-group">
+            <label for="">Mor/Bty:</label>
+            <span class="easting">E</span>
+            <input type="number" name="" id="btEast" disabled>
+            <span class="northing">N</span>
+            <input type="number" id="btNorth" disabled>
+        </div>
+        <div class="form-group">
+            <label for="">Tgt:</label>
+            <span class="easting">E</span>
+            <input type="number" name="" id="tgtEast" disabled>
+            <span class="northing">N</span>
+            <input type="number" id="tgtNorth" disabled>
+        </div>
+        <div class="form-group dms">
+            <label for="">Apex Angle</label>
+            <input type="number" id="apexAngleDeg" disabled><span class="symbol">&#176;</span>
+            <input type="number" value="" id="apexAngleMin" disabled><span class="symbol">&prime;</span>
+        </div>
+        <div class="form-group">
+            <label for="">Zone Seen</label>
+            <input type="text" id="zoneSeen" disabled>
+        </div>
+        <div class="form-group">
+            <label for="">Ot Factor</label>
+            <input type="number" id="otFactor" disabled>
+        </div>
+        <table>
+            <thead>
+                <tr>
+                    <td>Angle</td>
+                    <td>15&prime;</td>
+                    <td>30&prime;</td>
+                    <td>45&prime;</td>
+                    <td>1&#176;</td>
+                    <td>1&#176;30&prime;</td>
+                    <td>2&#176;</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr id="subTenEntriesDOM">
+                    <td>subTen</td>
+                    <!-- Dynamically add row subten values -->
+                </tr>
+            </tbody>
+        </table>
+        <div class="form-group">
+            <label for="">Observation: </label>
+            <span class="right-spacing">L</span>
+            <input type="radio" name="targetObs" value="left" id="leftRadio">
+            <span class="span-spacing">R</span>
+            <input type="radio" name="targetObs" value="right" id="rightRadio">
+            <input type="number" placeholder="DEG" id="corrDeg">
+            <input type="number" placeholder="MIN" id="corrMin">
+        </div>
+        <div class="form-group">
+            <span class="span-spacing">O</span>
+            <input type="radio" name="correction" id="overRadio" value="over">
+            <span class="span-spacing">S</span>
+            <input type="radio" name="correction" id="shortRadio" value="short">
+            <span class="span-spacing">D</span>
+            <input type="radio" name="correction" id="doubtfulRadio" value="doubtful">
+            <button type="button" id="correctionBtn">Calculate</button>
+        </div>
+        <div class="form-group range-correction">
+            <input type="text" id="correctionCommand" disabled style="width: 6rem">
+            <input type="number" id="correctionValue" disabled style="width: 5rem">
+            <input type="text" id="horizontalCorrection" disabled style="width: 7rem">
+        </div>
+        <div class="correction-summary">
+            <h3>Correction List</h2>
+            <ul class="correction-summary--list" id="correctionList">
+                <!-- <li></li> -->
+                <!-- Dynamically add list items -->
+            </ul>
+        </div>
+        <div class="form-group window-controls">
+            <button type="button" id="backBtn">Back</button>
+            <button type="button" class="exitBtn" id="exitBtn">Exit</button>
+            <button type="button" id="newMissionBtn">New Mission</button>
+        </div>
+    </form>
+    <footer>
+        <div class="centered caption">&#169; 2021 Capt.Utkarsh Arjaria</div>
+    </footer>
+    <script type="module" src="../resources/js/finalWindow.js"></script>
+</body>
+</html>

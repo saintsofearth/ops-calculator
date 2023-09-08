@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../resources/css/shared.css">
+    <link rel="stylesheet" href="../resources/css/detailsWindow.css">
+    <title>Details Window</title>
+</head>
+
+<body>
+    <form>
+        <div class="form-group">
+            <label for="">Op:</label>
+            <span class="easting">E</span>
+            <input type="number" value="" id="opEast" disabled>
+            <span class="northing">N</span>
+            <input type="number" value="" id="opNorth" disabled>
+        </div>
+        <div class="form-group">
+            <label for="">Mor/Bty:</label>
+            <span class="easting">E</span>
+            <input type="number" value="" id="btEast" disabled>
+            <span class="northing">N</span>
+            <input type="number" value="" id="btNorth" disabled>
+        </div>
+        <div class="form-group">
+            <label for="">Tgt:</label>
+            <span class="easting">E</span>
+            <input type="number" value="" id="tgtEast" disabled>
+            <span class="northing">N</span>
+            <input type="number" value="" id="tgtNorth" disabled>
+        </div>
+        <!-- <div>
+            <label for="">50% Length Zone:</label>
+            <input type="number">
+        </div> -->
+        <div class="form-group">
+            <button type="button" id="calculateBtn">calculate</button>
+            <button type="button" id="editBtn">Edit GR</button>
+        </div>
+        <ul>
+            <li>
+                <label for="">Mor/Bty Distance</label>
+                <input type="number" value="" id="btDist" disabled>
+            </li>
+            <li>
+                <label for="">Ot Distance</label>
+                <input type="number" value="" id="otDist" disabled>
+            </li>
+            <li class="dms">
+                <label for="">Oscar</label>
+                <input type="number" value="" id="oscarDeg" disabled><span class="symbol">&#176;</span>
+                <input type="number" value="" id="oscarMin" disabled><span class="symbol">&prime;</span>
+                <!-- <input type="number" value="" id="oscarSec" disabled><span class="symbol">&Prime;</span> -->
+            </li>
+            <li class="dms">
+                <label for="">Mor/Bty Bearing</label>
+                <input type="number" value="" id="btBearingDeg" disabled><span class="symbol">&#176;</span>
+                <input type="number" value="" id="btBearingMin" disabled><span class="symbol">&prime;</span>
+                <!-- <input type="number" value="" id="btBearingSec" disabled><span class="symbol">&Prime;</span> -->
+            </li>
+            <li class="dms">
+                <label for="">Apex Angle</label>
+                <input type="number" value="" id="apexAngleDeg" disabled><span class="symbol">&#176;</span>
+                <input type="number" value="" id="apexAngleMin" disabled><span class="symbol">&prime;</span>
+                <!-- <input type="number" value="" id="apexAngleSec" disabled><span class="symbol">&Prime;</span> -->
+            </li>
+            <li>
+                <label for="">Zone Seen</label>
+                <input type="text" value="" id="zoneSeen" disabled>
+            </li>
+            <li>
+                <label for="">OT Factor</label>
+                <input type="number" value="" id="otFactor" disabled>
+            </li>
+            <!-- <li>
+                <label for="">OT Lane</label>
+                <input type="number" value="" id="otLane">
+            </li> -->
+        </ul>
+        <div class="form-group">
+            <button type="button" id="backBtn">back</button>
+            <button type="button" id="nextBtn" disabled>next</button>
+        </div>
+    </form>
+    <footer>
+        <div class="centered caption">&#169; 2021 Capt.Utkarsh Arjaria</div>
+    </footer>
+    <script type="module" src="../resources/js/detailsWindow.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../resources/css/shared.css">
+    <link rel="stylesheet" href="../resources/css/initialWindow.css">
+    <title>OPs Calculator</title>
+</head>
+
+<body>
+    <header>
+        <h1>MFC/OP Calculator</h1>
+    </header>
+    <main>
+        <form class="coordinateForm">
+            <div class="form-group">
+                <label for="opEast">Op GR:</label>
+                <span class="easting">Easting</span>
+                <input type="number" name="" id="opEast" placeholder="">
+                <span class="northing">Northing</span>
+                <input type="number" name="" id="opNorth" placeholder="">
+            </div>
+            <div class="form-group">
+                <label for="btEast">Mor/Bty GR:</label>
+                <span class="easting">Easting</span>
+                <input type="number" name="" id="btEast" placeholder="">
+                <span class="northing">Northing</span>
+                <input type="number" name="" id="btNorth" placeholder="">
+            </div>
+            <div class="form-group tgtSelection">
+                <label for="tgtGr">Tgt Details:</label>
+                <input type="radio" id="tgtGrRadio" name="targetData" value="tgtGr">
+                <span class="gr-span">GR</span>
+                <input type="radio" id="polarDistRadio" name="targetData" value="polarDist">
+                <span class="polar-span">Polar</span>
+            </div>
+            <div id="tgDetails">
+                <!-- 
+                    Here we add target details dynamically 
+                -->
+            </div>
+            <div class="centered">
+                <button type="button" id="exitBtn" class="exitBtn" name="exitBtn">Exit</button>
+                <button type="button" id="clearTgt" name="clearTgt" disabled>clear TGT</button>
+                <button type="button" id="nextBtn" name="nextBtn" disabled>next</button>
+            </div>
+        </form>
+        <div id="result">
+            <p></p>
+        </div>
+    </main>
+    <footer>
+        <div class="centered caption">&#169; 2021 Capt.Utkarsh Arjaria</div>
+    </footer>
+    <script type="module" src="../resources/js/initialWindow.js"></script>
+</body>
+
+</html>

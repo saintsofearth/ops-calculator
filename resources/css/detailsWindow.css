@@ -1,0 +1,40 @@
+.form-group input {
+    border: 2px dashed #ffa833;
+}
+
+input:disabled {
+    background-color: #232526;
+    border: 2px solid #333638;
+}
+
+.form-group input:focus {
+    border: 0;
+    border-bottom: 2px solid #ffa833;
+}
+
+ul {
+    width: 100%;
+    text-align: center;
+}
+
+li {
+    margin-bottom: 1rem;
+}
+
+li label {
+    margin-right: 0.5rem;
+}
+
+li input {
+    padding: 0.25rem 0.5rem;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #FF9200;
+    /* background-color:#333638; */
+    /* border: 2px solid transparent; */
+
+    /* outline-color: #ffa833; */
+    outline-width: 0;
+    /* outline-offset: 0; */
+}
