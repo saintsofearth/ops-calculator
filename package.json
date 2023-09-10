@@ -4,10 +4,11 @@
   "version": "1.0.0",
   "description": "Ops calculator desktop application",
   "main": "main.js",
+
   "scripts": {
     "start": "electron-forge start",
-    "package": "electron-forge package . OPs-calculator --platform=linux --arch=arm64",
-    "make": "electron-forge make . OPs-calculator --platform=linux --arch=arm64"
+    "package": "electron-forge package . OPs-calculator --targets=@electron-forge/maker-deb",
+    "make": "electron-forge make . OPs-calculator --targets=@electron-forge/maker-deb"
   },
   "author": "saintsofearth",
   "license": "ISC",
